@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MultiCoin">
+  <meta name="theme-color" content="#0A0A0A">
+  
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <title>MultiCoin 记账</title>
+  <style>/* MultiCoin 记账 App — 样式 */
+:root {
+  --bg: #0A0A0A;
+  --bg-card: #1C1C1E;
+  --bg-card-2: #2C2C2E;
+  --bg-input: #2C2C2E;
+  --text: #FFFFFF;
+  --text-2: #98989F;
+  --text-3: #636366;
+  --accent: #0A84FF;
+  --green: #30D158;
+  --red: #FF453A;
+  --orange: #FF9F0A;
+  --separator: #38383A;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+input, select, button, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+
+.loading {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  height: 100vh; gap: 16px;
+  color: var(--text-2);
+}
+.spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--bg-card-2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== 页面容器 ===== */
+.page {
+  min-height: 100vh;
+  padding-top: var(--safe-top);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ===== 导航栏 ===== */
+.nav-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px; height: 52px;
+  position: sticky; top: var(--safe-top);
+  background: var(--bg);
+  z-index: 10;
+}
+.nav-bar h2 { font-size: 20px; font-weight: 700; }
+.nav-btn {
+  background: none; border: none; color: var(--accent);
+  font-size: 18px; cursor: pointer; padding: 4px 8px;
+}
+.nav-save { font-weight: 600; }
+
+/* ===== 首页头部 ===== */
+.header {
+  padding: 20px 20px 16px;
+}
+.header-top {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.header h1 {
+  font-size: 14px; color: var(--text-2); font-weight: 500;
+}
+.total-amount {
+  font-size: 40px; font-weight: 800; letter-spacing: -1px;
+  margin-bottom: 4px;
+}
+.sub-amount {
+  font-size: 14px; color: var(--text-2);
+}
+
+/* ===== 币种切换器 ===== */
+.currency-switcher {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--bg-card);
+  padding: 6px 12px; border-radius: 20px;
+  cursor: pointer; font-size: 14px; font-weight: 600;
+  transition: background 0.2s;
+}
+.currency-switcher:active { background: var(--bg-card-2); }
+.cs-symbol { font-size: 16px; }
+.cs-code { color: var(--text-2); }
+.cs-arrow { font-size: 8px; color: var(--text-3); }
+
+/* ===== 成员 Tab ===== */
+.member-tabs {
+  display: flex; gap: 8px; padding: 0 20px 16px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.member-tabs::-webkit-scrollbar { display: none; }
+.member-tab {
+  flex-shrink: 0;
+  background: var(--bg-card); border: 1px solid transparent;
+  color: var(--text-2); padding: 8px 16px; border-radius: 20px;
+  font-size: 14px; font-weight: 500; cursor: pointer;
+  white-space: nowrap; transition: all 0.2s;
+}
+.member-tab.active {
+  background: var(--accent); color: #fff;
+}
+
+/* ===== 区块 ===== */
+.section {
+  padding: 0 20px 20px;
+}
+.section-title {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px; color: var(--text-2); font-weight: 600;
+  margin-bottom: 12px; text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.section-amount {
+  color: var(--text); font-size: 16px; font-weight: 700;
+  text-transform: none;
+}
+.empty-hint {
+  color: var(--text-3); font-size: 14px; text-align: center;
+  padding: 24px 0;
+}
+
+/* ===== 账户卡片 ===== */
+.account-cards {
+  display: flex; gap: 12px; overflow-x: auto;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.account-cards::-webkit-scrollbar { display: none; }
+.account-card {
+  flex-shrink: 0; width: 140px;
+  background: var(--bg-card); border-radius: var(--radius);
+  padding: 16px; cursor: pointer;
+  transition: transform 0.15s;
+}
+.account-card:active { transform: scale(0.96); }
+.account-icon { font-size: 24px; margin-bottom: 8px; }
+.account-name { font-size: 13px; color: var(--text-2); margin-bottom: 4px; }
+.account-balance { font-size: 18px; font-weight: 700; }
+.account-currency { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+
+/* ===== 分类条形图 ===== */
+.category-breakdown { display: flex; flex-direction: column; gap: 10px; }
+.cat-bar {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px;
+}
+.cat-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.cat-name { width: 50px; flex-shrink: 0; }
+.cat-bar-bg {
+  flex: 1; height: 8px; background: var(--bg-card);
+  border-radius: 4px; overflow: hidden;
+}
+.cat-bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.cat-amount { font-size: 12px; color: var(--text-2); flex-shrink: 0; }
+
+/* ===== 交易列表 ===== */
+.tx-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 0;
+  border-bottom: 0.5px solid var(--separator);
+  cursor: pointer;
+}
+.tx-item:last-child { border-bottom: none; }
+.tx-item:active { opacity: 0.7; }
+.tx-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.tx-info { flex: 1; min-width: 0; }
+.tx-title { font-size: 16px; font-weight: 600; }
+.tx-meta {
+  font-size: 12px; color: var(--text-3);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.tx-member-dot {
+  display: inline-block; width: 6px; height: 6px;
+  border-radius: 50%; margin-right: 4px;
+}
+.tx-amount {
+  font-size: 16px; font-weight: 700; flex-shrink: 0;
+  text-align: right;
+}
+
+/* ===== Tab Bar ===== */
+.tab-bar {
+  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 500px;
+  display: flex; justify-content: space-around; align-items: center;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 6px 0 calc(6px + var(--safe-bottom));
+  border-top: 0.5px solid var(--separator);
+  z-index: 100;
+}
+.tab {
+  background: none; border: none; color: var(--text-3);
+  display: flex; flex-direction: column; align-items: center;
+  gap: 2px; padding: 4px 20px; cursor: pointer;
+  font-size: 10px;
+}
+.tab.active { color: var(--accent); }
+.tab-icon { font-size: 22px; }
+.tab-label { font-size: 10px; }
+.tab-add { flex: 0; }
+.tab-add-btn {
+  width: 48px; height: 48px;
+  background: var(--accent); color: #fff;
+  border-radius: 50%; font-size: 28px;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1; font-weight: 300;
+  margin-top: -20px;
+  box-shadow: 0 4px 16px rgba(10,132,255,0.4);
+  transition: transform 0.15s;
+}
+.tab-add-btn:active { transform: scale(0.9); }
+
+/* ===== 记账页 ===== */
+.type-segment {
+  display: flex; padding: 0 20px; margin-bottom: 24px;
+  background: var(--bg-card); border-radius: 10px; padding: 3px;
+}
+.seg-btn {
+  flex: 1; background: none; border: none;
+  color: var(--text-2); padding: 8px 0; border-radius: 8px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.seg-btn.active.expense { background: var(--red); color: #fff; }
+.seg-btn.active.income { background: var(--green); color: #fff; }
+.seg-btn.active.transfer { background: var(--orange); color: #fff; }
+
+.amount-input-area {
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; gap: 12px;
+}
+.amount-input-area input {
+  flex: 1; background: none; border: none;
+  font-size: 48px; font-weight: 800; color: var(--text);
+  text-align: right; outline: none; min-width: 0;
+}
+.amount-currency {
+  display: flex; align-items: center; gap: 4px;
+  background: var(--bg-card); padding: 8px 14px; border-radius: 20px;
+  cursor: pointer; font-size: 16px; font-weight: 600;
+}
+.rate-display {
+  text-align: center; font-size: 13px; color: var(--text-2);
+  padding: 0 20px 20px; cursor: pointer;
+}
+
+.form-section { padding: 0 20px 20px; }
+.form-label {
+  font-size: 13px; color: var(--text-2); font-weight: 600;
+  margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.form-select, .form-input {
+  width: 100%; background: var(--bg-input); border: none;
+  border-radius: var(--radius); padding: 12px 16px;
+  color: var(--text); font-size: 16px; outline: none;
+}
+.form-select { appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2398989F'%3E%3Cpath d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 16px center;
+}
+
+/* 成员选择 */
+.member-picker {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.member-pick-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--bg-card); border: 1.5px solid transparent;
+  color: var(--text); padding: 8px 14px; border-radius: 20px;
+  font-size: 14px; cursor: pointer; transition: all 0.2s;
+}
+.member-pick-btn .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+}
+
+/* 分类网格 */
+.category-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.cat-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: none; border: 1.5px solid transparent;
+  padding: 10px 4px; border-radius: var(--radius);
+  cursor: pointer; transition: all 0.2s;
+}
+.cat-btn-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.cat-btn-name { font-size: 12px; color: var(--text-2); }
+
+/* 删除按钮 */
+.delete-btn {
+  width: calc(100% - 40px); margin: 0 20px;
+  background: var(--bg-card); border: none; color: var(--red);
+  padding: 14px; border-radius: var(--radius);
+  font-size: 16px; font-weight: 600; cursor: pointer;
+}
+
+/* ===== 报表页 ===== */
+.period-segment {
+  display: flex; padding: 0 20px; margin-bottom: 12px;
+  background: var(--bg-card); border-radius: 10px; padding: 3px;
+}
+.summary-cards {
+  display: flex; gap: 8px; padding: 0 20px 20px;
+}
+.summary-card {
+  flex: 1; background: var(--bg-card); border-radius: var(--radius);
+  padding: 14px 10px; text-align: center;
+}
+.sc-label { font-size: 12px; color: var(--text-2); margin-bottom: 6px; }
+.sc-amount { font-size: 14px; font-weight: 700; }
+.summary-card.expense .sc-amount { color: var(--red); }
+.summary-card.income .sc-amount { color: var(--green); }
+.summary-card.balance .sc-amount { color: var(--accent); }
+
+.chart-container {
+  background: var(--bg-card); border-radius: var(--radius);
+  padding: 16px; margin-bottom: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.legend { display: flex; flex-direction: column; gap: 8px; }
+.legend-item {
+  display: flex; align-items: center; gap: 8px; font-size: 13px;
+}
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.legend-name { flex: 1; }
+.legend-amount { font-weight: 600; }
+.legend-percent { color: var(--text-2); width: 40px; text-align: right; }
+
+/* 成员对比 */
+.member-bars { display: flex; flex-direction: column; gap: 12px; }
+.member-bar-item {
+  display: flex; align-items: center; gap: 8px; font-size: 13px;
+}
+.mb-info {
+  display: flex; align-items: center; gap: 6px;
+  width: 60px; flex-shrink: 0;
+}
+.mb-info .dot { width: 8px; height: 8px; border-radius: 50%; }
+.mb-bar-bg {
+  flex: 1; height: 24px; background: var(--bg-card);
+  border-radius: 6px; overflow: hidden;
+}
+.mb-bar-fill { height: 100%; border-radius: 6px; transition: width 0.3s; }
+.mb-amount { font-weight: 600; flex-shrink: 0; width: 80px; text-align: right; }
+
+/* 币种分布 */
+.currency-dist { display: flex; flex-direction: column; gap: 10px; }
+.cd-item {
+  display: flex; align-items: center; gap: 8px; font-size: 13px;
+}
+.cd-flag { font-size: 16px; }
+.cd-code { width: 36px; flex-shrink: 0; }
+.cd-bar-bg {
+  flex: 1; height: 8px; background: var(--bg-card);
+  border-radius: 4px; overflow: hidden;
+}
+.cd-bar-fill { height: 100%; border-radius: 4px; background: var(--accent); transition: width 0.3s; }
+.cd-percent { color: var(--text-2); width: 36px; text-align: right; }
+
+/* ===== 设置页 ===== */
+.setting-group { padding: 0 20px 24px; }
+.setting-group-title {
+  font-size: 13px; color: var(--text-2); font-weight: 600;
+  margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.setting-row {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--bg-card); padding: 14px 16px;
+  border-radius: 0; border-bottom: 0.5px solid var(--separator);
+  cursor: pointer; font-size: 15px;
+}
+.setting-row:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+.setting-row:last-child { border-radius: 0 0 var(--radius) var(--radius); border-bottom: none; }
+.setting-arrow { color: var(--text-3); }
+.setting-hint { color: var(--text-3); font-size: 13px; }
+.dot {
+  display: inline-block; width: 10px; height: 10px;
+  border-radius: 50%; margin-right: 6px;
+}
+.archived-tag {
+  font-size: 11px; color: var(--text-3);
+  background: var(--bg-card-2); padding: 2px 6px; border-radius: 4px;
+  margin-left: 6px;
+}
+.account-tag {
+  font-size: 11px; color: var(--accent);
+  background: rgba(10,132,255,0.15); padding: 2px 6px; border-radius: 4px;
+}
+.row-actions {
+  display: flex; gap: 6px;
+}
+.row-actions button {
+  background: var(--bg-card-2); border: none; color: var(--text);
+  padding: 4px 10px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+.row-actions button.danger { color: var(--red); }
+.add-btn {
+  width: 100%; background: var(--bg-card); border: none;
+  color: var(--accent); padding: 14px; border-radius: 0 0 var(--radius) var(--radius);
+  font-size: 15px; font-weight: 600; cursor: pointer;
+}
+.cat-color-dot {
+  display: inline-block; width: 12px; height: 12px;
+  border-radius: 3px; margin-right: 6px;
+}
+
+/* ===== 底部弹窗 ===== */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200; display: flex; align-items: flex-end;
+  opacity: 0; transition: opacity 0.3s;
+}
+.overlay.show { opacity: 1; }
+.picker-sheet, .editor-sheet {
+  width: 100%; max-width: 500px; margin: 0 auto;
+  background: var(--bg-card);
+  border-radius: 20px 20px 0 0;
+  padding: 8px 20px calc(20px + var(--safe-bottom));
+  max-height: 85vh; overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+.overlay.show .picker-sheet, .overlay.show .editor-sheet {
+  transform: translateY(0);
+}
+.picker-handle {
+  width: 36px; height: 5px; background: var(--text-3);
+  border-radius: 3px; margin: 4px auto 16px;
+}
+.picker-title {
+  font-size: 18px; font-weight: 700; margin-bottom: 16px; text-align: center;
+}
+
+/* 币种列表 */
+.currency-list { display: flex; flex-direction: column; gap: 4px; }
+.currency-option {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--bg-card-2); border: none;
+  padding: 14px 16px; border-radius: var(--radius);
+  cursor: pointer; width: 100%; text-align: left;
+  transition: background 0.15s;
+}
+.currency-option.selected { background: rgba(10,132,255,0.2); }
+.currency-option:active { background: var(--bg-input); }
+.cur-flag { font-size: 24px; }
+.cur-info { flex: 1; display: flex; flex-direction: column; }
+.cur-code { font-size: 16px; font-weight: 700; }
+.cur-name { font-size: 13px; color: var(--text-2); }
+.cur-symbol { font-size: 16px; color: var(--text-2); }
+.cur-check { color: var(--accent); font-size: 18px; }
+
+/* 颜色选择器 */
+.color-picker {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.color-option {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 3px solid transparent; cursor: pointer;
+  transition: border-color 0.15s;
+}
+.color-option.selected { border-color: #fff; }
+
+/* 图标选择器 */
+.icon-picker {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;
+}
+.icon-option {
+  width: 100%; aspect-ratio: 1; background: var(--bg-card-2);
+  border: 2px solid transparent; border-radius: 10px;
+  font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.15s;
+}
+.icon-option.selected { border-color: var(--accent); }
+
+.primary-btn {
+  width: 100%; background: var(--accent); border: none;
+  color: #fff; padding: 14px; border-radius: var(--radius);
+  font-size: 16px; font-weight: 700; cursor: pointer;
+  margin-top: 8px;
+}
+.primary-btn:active { opacity: 0.8; }
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(20px);
+  background: var(--bg-card-2); color: #fff;
+  padding: 12px 24px; border-radius: 20px;
+  font-size: 14px; z-index: 300;
+  opacity: 0; transition: all 0.3s;
+  white-space: nowrap;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* 响应式 */
+@media (min-width: 500px) {
+  .tab-bar { box-shadow: 0 -1px 0 var(--separator); }
+}
+</style>
+</head>
+<body>
+  <div id="app">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>加载中...</p>
+    </div>
+  </div>
+
+  <script>/**
+ * MultiCoin 记账 App — 数据层
+ * 基于 IndexedDB 的本地持久化存储
+ */
+
+const DB_NAME = 'MultiCoinDB';
+const DB_VERSION = 1;
+const STORES = {
+  transactions: 'transactions',
+  accounts: 'accounts',
+  categories: 'categories',
+  members: 'members',
+  rateCache: 'rateCache',
+  settings: 'settings'
+};
+
+let db = null;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onerror = () => reject(req.error);
+    req.onsuccess = () => { db = req.result; resolve(db); };
+    req.onupgradeneeded = (e) => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains(STORES.transactions)) {
+        const s = d.createObjectStore(STORES.transactions, { keyPath: 'id' });
+        s.createIndex('date', 'date');
+        s.createIndex('member_id', 'member_id');
+        s.createIndex('category_id', 'category_id');
+        s.createIndex('account_id', 'account_id');
+      }
+      if (!d.objectStoreNames.contains(STORES.accounts)) {
+        const s = d.createObjectStore(STORES.accounts, { keyPath: 'id' });
+        s.createIndex('member_id', 'member_id');
+      }
+      if (!d.objectStoreNames.contains(STORES.categories)) {
+        const s = d.createObjectStore(STORES.categories, { keyPath: 'id' });
+        s.createIndex('parent_id', 'parent_id');
+      }
+      if (!d.objectStoreNames.contains(STORES.members)) {
+        d.createObjectStore(STORES.members, { keyPath: 'id' });
+      }
+      if (!d.objectStoreNames.contains(STORES.rateCache)) {
+        const s = d.createObjectStore(STORES.rateCache, { keyPath: 'id' });
+        s.createIndex('date', 'date');
+      }
+      if (!d.objectStoreNames.contains(STORES.settings)) {
+        d.createObjectStore(STORES.settings, { keyPath: 'key' });
+      }
+    };
+  });
+}
+
+function tx(store, mode = 'readonly') {
+  return db.transaction(store, mode).objectStore(store);
+}
+
+function dbGet(store, key) {
+  return new Promise((resolve, reject) => {
+    const r = tx(store).get(key);
+    r.onsuccess = () => resolve(r.result);
+    r.onerror = () => reject(r.error);
+  });
+}
+
+function dbGetAll(store) {
+  return new Promise((resolve, reject) => {
+    const r = tx(store).getAll();
+    r.onsuccess = () => resolve(r.result || []);
+    r.onerror = () => reject(r.error);
+  });
+}
+
+function dbPut(store, obj) {
+  return new Promise((resolve, reject) => {
+    const r = tx(store, 'readwrite').put(obj);
+    r.onsuccess = () => resolve(obj);
+    r.onerror = () => reject(r.error);
+  });
+}
+
+function dbDelete(store, key) {
+  return new Promise((resolve, reject) => {
+    const r = tx(store, 'readwrite').delete(key);
+    r.onsuccess = () => resolve();
+    r.onerror = () => reject(r.error);
+  });
+}
+
+function dbClear(store) {
+  return new Promise((resolve, reject) => {
+    const r = tx(store, 'readwrite').clear();
+    r.onsuccess = () => resolve();
+    r.onerror = () => reject(r.error);
+  });
+}
+
+// ===== Settings =====
+async function getSetting(key, defaultVal) {
+  const r = await dbGet(STORES.settings, key);
+  return r ? r.value : defaultVal;
+}
+async function setSetting(key, value) {
+  await dbPut(STORES.settings, { key, value });
+}
+
+// ===== Initialization =====
+async function initData() {
+  const initialized = await getSetting('initialized', false);
+  if (initialized) return;
+
+  // 预置成员
+  const familyMember = {
+    id: 'family',
+    name: '全家',
+    avatar: 'house.fill',
+    color: '#F59E0B',
+    is_family: true,
+    sort_order: 0,
+    is_archived: false,
+    created_at: new Date().toISOString()
+  };
+  await dbPut(STORES.members, familyMember);
+
+  // 预置分类
+  const expenseCats = [
+    { name: '餐饮', icon: 'fork.knife', color: '#EF4444' },
+    { name: '交通', icon: 'car.fill', color: '#3B82F6' },
+    { name: '购物', icon: 'bag.fill', color: '#EC4899' },
+    { name: '住房', icon: 'house.fill', color: '#8B5CF6' },
+    { name: '娱乐', icon: 'gamecontroller.fill', color: '#10B981' },
+    { name: '医疗', icon: 'cross.case.fill', color: '#F97316' },
+    { name: '教育', icon: 'book.fill', color: '#06B6D4' },
+    { name: '旅行', icon: 'airplane', color: '#14B8A6' },
+    { name: '其他', icon: 'ellipsis.circle', color: '#6B7280' }
+  ];
+  const incomeCats = [
+    { name: '工资', icon: 'banknote', color: '#22C55E' },
+    { name: '兼职', icon: 'briefcase.fill', color: '#84CC16' },
+    { name: '理财收益', icon: 'chart.line.uptrend.xyaxis', color: '#0EA5E9' },
+    { name: '红包', icon: 'gift.fill', color: '#E11D48' },
+    { name: '其他', icon: 'ellipsis.circle', color: '#6B7280' }
+  ];
+  let order = 0;
+  for (const c of expenseCats) {
+    await dbPut(STORES.categories, {
+      id: crypto.randomUUID(), name: c.name, icon: c.icon, color: c.color,
+      type: 'expense', parent_id: null, sort_order: order++, is_archived: false
+    });
+  }
+  order = 0;
+  for (const c of incomeCats) {
+    await dbPut(STORES.categories, {
+      id: crypto.randomUUID(), name: c.name, icon: c.icon, color: c.color,
+      type: 'income', parent_id: null, sort_order: order++, is_archived: false
+    });
+  }
+
+  // 预置账户
+  const defaultAccounts = [
+    { name: '英镑现金', currency: 'GBP', type: 'cash', balance: 0 },
+    { name: '人民币现金', currency: 'CNY', type: 'cash', balance: 0 },
+    { name: '银行卡', currency: 'CNY', type: 'bank', balance: 0 }
+  ];
+  order = 0;
+  for (const a of defaultAccounts) {
+    await dbPut(STORES.accounts, {
+      id: crypto.randomUUID(), name: a.name, currency: a.currency,
+      type: a.type, balance: a.balance, member_id: null,
+      sort_order: order++, is_archived: false, note: ''
+    });
+  }
+
+  // 默认设置
+  await setSetting('baseCurrency', 'CNY');
+  await setSetting('displayCurrency', 'CNY');
+  await setSetting('lastMemberId', 'family');
+  await setSetting('initialized', true);
+}
+
+// ===== Transactions =====
+async function getTransactions(filters = {}) {
+  let all = await dbGetAll(STORES.transactions);
+  all.sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (filters.memberId) all = all.filter(t => t.member_id === filters.memberId);
+  if (filters.accountId) all = all.filter(t => t.account_id === filters.accountId);
+  if (filters.categoryId) all = all.filter(t => t.category_id === filters.categoryId);
+  if (filters.type) all = all.filter(t => t.type === filters.type);
+  if (filters.startDate) all = all.filter(t => new Date(t.date) >= new Date(filters.startDate));
+  if (filters.endDate) all = all.filter(t => new Date(t.date) <= new Date(filters.endDate));
+  if (filters.currency) all = all.filter(t => t.currency === filters.currency);
+  return all;
+}
+
+async function saveTransaction(t) {
+  if (!t.id) t.id = crypto.randomUUID();
+  if (!t.created_at) t.created_at = new Date().toISOString();
+  await dbPut(STORES.transactions, t);
+  // 更新账户余额
+  await updateAccountBalance(t);
+  return t;
+}
+
+async function deleteTransaction(id) {
+  const t = await dbGet(STORES.transactions, id);
+  if (t) {
+    // 回滚账户余额
+    const acct = await dbGet(STORES.accounts, t.account_id);
+    if (acct) {
+      let amountInAcctCurrency = t.amount;
+      if (t.currency !== acct.currency) {
+        const rateToAcct = await window.RateService.getRate(t.currency, acct.currency, t.rate_date);
+        if (rateToAcct) amountInAcctCurrency = t.amount * rateToAcct;
+      }
+      if (t.type === 'expense') acct.balance += amountInAcctCurrency;
+      else if (t.type === 'income') acct.balance -= amountInAcctCurrency;
+      else if (t.type === 'transfer') {
+        acct.balance += amountInAcctCurrency;
+        if (t.to_account_id) {
+          const toAcct = await dbGet(STORES.accounts, t.to_account_id);
+          if (toAcct) {
+            let toAmount = t.to_amount || t.amount;
+            if (t.currency !== toAcct.currency && !t.to_amount) {
+              const rateToTo = await window.RateService.getRate(t.currency, toAcct.currency, t.rate_date);
+              if (rateToTo) toAmount = t.amount * rateToTo;
+            }
+            toAcct.balance -= toAmount;
+            await dbPut(STORES.accounts, toAcct);
+          }
+        }
+      }
+      await dbPut(STORES.accounts, acct);
+    }
+  }
+  await dbDelete(STORES.transactions, id);
+}
+
+async function updateAccountBalance(t) {
+  const acct = await dbGet(STORES.accounts, t.account_id);
+  if (!acct) return;
+  // 将交易金额折算到账户币种
+  let amountInAcctCurrency = t.amount;
+  if (t.currency !== acct.currency) {
+    // 使用交易保存的汇率进行折算：先转本位币，再转账户币种
+    const rateToAcct = await window.RateService.getRate(t.currency, acct.currency, t.rate_date);
+    if (rateToAcct) amountInAcctCurrency = t.amount * rateToAcct;
+  }
+  if (t.type === 'expense') acct.balance -= amountInAcctCurrency;
+  else if (t.type === 'income') acct.balance += amountInAcctCurrency;
+  else if (t.type === 'transfer') {
+    acct.balance -= amountInAcctCurrency;
+    await dbPut(STORES.accounts, acct);
+    if (t.to_account_id) {
+      const toAcct = await dbGet(STORES.accounts, t.to_account_id);
+      if (toAcct) {
+        let toAmount = t.to_amount || t.amount;
+        if (t.currency !== toAcct.currency && !t.to_amount) {
+          const rateToTo = await window.RateService.getRate(t.currency, toAcct.currency, t.rate_date);
+          if (rateToTo) toAmount = t.amount * rateToTo;
+        }
+        toAcct.balance += toAmount;
+        await dbPut(STORES.accounts, toAcct);
+      }
+      return;
+    }
+  }
+  await dbPut(STORES.accounts, acct);
+}
+
+// ===== Accounts =====
+async function getAccounts() {
+  let all = await dbGetAll(STORES.accounts);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  return all.filter(a => !a.is_archived);
+}
+async function getAllAccounts() {
+  let all = await dbGetAll(STORES.accounts);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  return all;
+}
+async function saveAccount(a) {
+  if (!a.id) { a.id = crypto.randomUUID(); a.is_archived = a.is_archived || false; }
+  await dbPut(STORES.accounts, a);
+  return a;
+}
+async function deleteAccount(id) {
+  const a = await dbGet(STORES.accounts, id);
+  if (a) { a.is_archived = true; await dbPut(STORES.accounts, a); }
+}
+
+// ===== Categories =====
+async function getCategories(type = null) {
+  let all = await dbGetAll(STORES.categories);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  let result = all.filter(c => !c.is_archived);
+  if (type) result = result.filter(c => c.type === type);
+  return result;
+}
+async function getAllCategories() {
+  let all = await dbGetAll(STORES.categories);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  return all;
+}
+async function saveCategory(c) {
+  if (!c.id) { c.id = crypto.randomUUID(); c.is_archived = c.is_archived || false; }
+  await dbPut(STORES.categories, c);
+  return c;
+}
+async function deleteCategory(id, migrateTo = null) {
+  // 迁移历史交易
+  const txns = await getTransactions();
+  for (const t of txns) {
+    if (t.category_id === id) {
+      t.category_id = migrateTo;
+      await dbPut(STORES.transactions, t);
+    }
+  }
+  await dbDelete(STORES.categories, id);
+}
+async function archiveCategory(id) {
+  const c = await dbGet(STORES.categories, id);
+  if (c) { c.is_archived = true; await dbPut(STORES.categories, c); }
+}
+
+// ===== Members =====
+async function getMembers() {
+  let all = await dbGetAll(STORES.members);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  return all.filter(m => !m.is_archived);
+}
+async function getAllMembers() {
+  let all = await dbGetAll(STORES.members);
+  all.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  return all;
+}
+async function saveMember(m) {
+  if (!m.id) {
+    m.id = crypto.randomUUID();
+    m.is_family = false;
+    m.is_archived = m.is_archived || false;
+    m.created_at = new Date().toISOString();
+  }
+  await dbPut(STORES.members, m);
+  return m;
+}
+async function deleteMember(id, migrateTo = 'family') {
+  if (id === 'family') return;
+  const txns = await getTransactions();
+  for (const t of txns) {
+    if (t.member_id === id) {
+      t.member_id = migrateTo;
+      await dbPut(STORES.transactions, t);
+    }
+  }
+  await dbDelete(STORES.members, id);
+}
+async function archiveMember(id) {
+  if (id === 'family') return;
+  const m = await dbGet(STORES.members, id);
+  if (m) { m.is_archived = true; await dbPut(STORES.members, m); }
+}
+
+// ===== Rate Cache =====
+async function getCachedRate(from, to, date) {
+  const id = `${from}_${to}_${date}`;
+  return await dbGet(STORES.rateCache, id);
+}
+async function saveCachedRate(from, to, rate, date) {
+  const id = `${from}_${to}_${date}`;
+  await dbPut(STORES.rateCache, {
+    id, base_currency: from, quote_currency: to, rate, date, fetched_at: new Date().toISOString()
+  });
+}
+async function getAllCachedRates() {
+  return await dbGetAll(STORES.rateCache);
+}
+
+// Export for use
+window.DB = {
+  openDB, initData,
+  getTransactions, saveTransaction, deleteTransaction,
+  getAccounts, getAllAccounts, saveAccount, deleteAccount,
+  getCategories, getAllCategories, saveCategory, deleteCategory, archiveCategory,
+  getMembers, getAllMembers, saveMember, deleteMember, archiveMember,
+  getCachedRate, saveCachedRate, getAllCachedRates,
+  getSetting, setSetting
+};
+</script>
+  <script>/**
+ * MultiCoin 记账 App — 汇率服务
+ * Frankfurter API + 本地缓存 + 离线降级
+ */
+
+const CURRENCIES = [
+  { code: 'GBP', symbol: '£', name: '英镑', flag: '🇬🇧', priority: 0 },
+  { code: 'CNY', symbol: '¥', name: '人民币', flag: '🇨🇳', priority: 0 },
+  { code: 'USD', symbol: '$', name: '美元', flag: '🇺🇸', priority: 1 },
+  { code: 'EUR', symbol: '€', name: '欧元', flag: '🇪🇺', priority: 1 },
+  { code: 'JPY', symbol: '¥', name: '日元', flag: '🇯🇵', priority: 2 },
+  { code: 'KRW', symbol: '₩', name: '韩元', flag: '🇰🇷', priority: 2 },
+  { code: 'THB', symbol: '฿', name: '泰铢', flag: '🇹🇭', priority: 2 },
+  { code: 'AUD', symbol: 'A$', name: '澳元', flag: '🇦🇺', priority: 2 }
+];
+
+const API_BASE = 'https://api.frankfurter.dev/v1';
+
+async function fetchRatesFromAPI(base = 'GBP', date = null) {
+  const symbols = CURRENCIES.filter(c => c.code !== base).map(c => c.code).join(',');
+  const url = date
+    ? `${API_BASE}/${date}?base=${base}&symbols=${symbols}`
+    : `${API_BASE}/latest?base=${base}&symbols=${symbols}`;
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`API error: ${resp.status}`);
+  const data = await resp.json();
+  return data.rates;
+}
+
+async function fetchAndCacheRates(baseCurrency) {
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const rates = await fetchRatesFromAPI(baseCurrency);
+    for (const [quote, rate] of Object.entries(rates)) {
+      await DB.saveCachedRate(baseCurrency, quote, rate, today);
+    }
+    // 同时缓存反向汇率
+    for (const [quote, rate] of Object.entries(rates)) {
+      const reverseRate = 1 / rate;
+      await DB.saveCachedRate(quote, baseCurrency, reverseRate, today);
+    }
+    // 缓存交叉汇率（通过 base 中转）
+    const allCodes = [baseCurrency, ...Object.keys(rates)];
+    for (const from of allCodes) {
+      for (const to of allCodes) {
+        if (from === to) continue;
+        let rate;
+        if (from === baseCurrency) rate = rates[to];
+        else if (to === baseCurrency) rate = 1 / rates[from];
+        else rate = rates[to] / rates[from];
+        await DB.saveCachedRate(from, to, rate, today);
+      }
+    }
+    await DB.setSetting('lastRateUpdate', new Date().toISOString());
+    return rates;
+  } catch (err) {
+    console.warn('Failed to fetch rates:', err);
+    return null;
+  }
+}
+
+async function getRate(from, to, date = null) {
+  if (from === to) return 1;
+  const dateStr = date || new Date().toISOString().split('T')[0];
+  // 查缓存
+  const cached = await DB.getCachedRate(from, to, dateStr);
+  if (cached) return cached.rate;
+  // 尝试获取最新缓存
+  const todayStr = new Date().toISOString().split('T')[0];
+  if (dateStr !== todayStr) {
+    const todayCached = await DB.getCachedRate(from, to, todayStr);
+    if (todayCached) return todayCached.rate;
+  }
+  // 尝试 API
+  try {
+    const rates = await fetchRatesFromAPI(from, date);
+    if (rates[to]) {
+      await DB.saveCachedRate(from, to, rates[to], dateStr);
+      return rates[to];
+    }
+  } catch (e) {
+    // 离线，返回 null
+  }
+  return null;
+}
+
+async function convertAmount(amount, fromCurrency, toCurrency, date = null) {
+  const rate = await getRate(fromCurrency, toCurrency, date);
+  if (rate === null) return { amount: null, rate: null };
+  return { amount: amount * rate, rate };
+}
+
+function formatCurrency(amount, currencyCode) {
+  const cur = CURRENCIES.find(c => c.code === currencyCode);
+  if (!cur) return `${amount.toFixed(2)}`;
+  // 日元和韩元不显示小数
+  if (currencyCode === 'JPY' || currencyCode === 'KRW') {
+    return `${cur.symbol}${Math.round(amount).toLocaleString()}`;
+  }
+  return `${cur.symbol}${amount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
+}
+
+function getCurrencyInfo(code) {
+  return CURRENCIES.find(c => c.code === code) || CURRENCIES[0];
+}
+
+async function ensureRatesFresh(baseCurrency) {
+  const lastUpdate = await DB.getSetting('lastRateUpdate', null);
+  const today = new Date().toISOString().split('T')[0];
+  if (!lastUpdate || !lastUpdate.startsWith(today)) {
+    await fetchAndCacheRates(baseCurrency);
+  }
+}
+
+window.RateService = {
+  CURRENCIES,
+  fetchAndCacheRates,
+  getRate,
+  convertAmount,
+  formatCurrency,
+  getCurrencyInfo,
+  ensureRatesFresh
+};
+</script>
+  <script>/**
+ * MultiCoin 记账 App — 主应用
+ */
+
+// ===== 全局状态 =====
+const State = {
+  currentPage: 'home',
+  displayCurrency: 'CNY',
+  baseCurrency: 'CNY',
+  selectedMemberId: 'family',
+  lastUsedCurrency: 'GBP',
+  lastUsedMemberId: 'family',
+  editingTransaction: null,
+  reportsFilter: { period: 'month', memberId: 'family', currency: null }
+};
+
+// ===== 工具函数 =====
+function uuid() { return crypto.randomUUID(); }
+function todayISO() { return new Date().toISOString().split('T')[0]; }
+function nowISO() { return new Date().toISOString(); }
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr);
+  const today = new Date();
+  const yesterday = new Date(today); yesterday.setDate(yesterday.getDate() - 1);
+  if (d.toDateString() === today.toDateString()) return '今天';
+  if (d.toDateString() === yesterday.toDateString()) return '昨天';
+  return `${d.getMonth()+1}月${d.getDate()}日`;
+}
+
+function formatDateFull(dateStr) {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
+}
+
+async function initApp() {
+  await DB.openDB();
+  await DB.initData();
+  State.baseCurrency = await DB.getSetting('baseCurrency', 'CNY');
+  State.displayCurrency = await DB.getSetting('displayCurrency', 'CNY');
+  State.lastUsedMemberId = await DB.getSetting('lastMemberId', 'family');
+  State.selectedMemberId = 'family';
+  // 尝试更新汇率
+  RateService.ensureRatesFresh(State.baseCurrency);
+  render();
+}
+
+// ===== 导航 =====
+async function navigate(page) {
+  State.currentPage = page;
+  if (page === 'add') {
+    State.editingTransaction = null;
+  }
+  await render();
+}
+
+async function openEdit(tx) {
+  State.editingTransaction = tx;
+  State.currentPage = 'add';
+  await render();
+}
+
+// ===== 主渲染入口 =====
+async function render() {
+  const app = document.getElementById('app');
+  if (State.currentPage === 'home') await renderHome(app);
+  else if (State.currentPage === 'add') await renderAddTransaction(app);
+  else if (State.currentPage === 'reports') await renderReports(app);
+  else if (State.currentPage === 'settings') await renderSettings(app);
+}
+
+// ===== 首页 =====
+async function renderHome(container) {
+  const accounts = await DB.getAccounts();
+  const members = await DB.getMembers();
+  const today = new Date();
+  const monthStart = new Date(today.getFullYear(), today.getMonth(), 1).toISOString();
+  const allTx = await DB.getTransactions({ startDate: monthStart });
+
+  // 按成员筛选
+  const filteredTx = State.selectedMemberId === 'family'
+    ? allTx
+    : allTx.filter(t => t.member_id === State.selectedMemberId);
+
+  // 计算总资产
+  let totalAssetsBase = 0;
+  for (const a of accounts) {
+    const { amount } = await RateService.convertAmount(a.balance, a.currency, State.baseCurrency);
+    totalAssetsBase += amount || 0;
+  }
+  // 折算到显示币种
+  const totalAssetsDisplay = await RateService.convertAmount(totalAssetsBase, State.baseCurrency, State.displayCurrency);
+
+  // 本月支出
+  const monthExpense = filteredTx.filter(t => t.type === 'expense');
+  let monthExpenseBase = 0;
+  for (const t of monthExpense) { monthExpenseBase += t.base_amount || 0; }
+  const monthExpenseDisplay = await RateService.convertAmount(monthExpenseBase, State.baseCurrency, State.displayCurrency);
+
+  // 最近交易
+  const recentTx = (await DB.getTransactions()).slice(0, 15);
+  const categories = await DB.getAllCategories();
+  const catMap = {}; categories.forEach(c => catMap[c.id] = c);
+  const memberMap = {}; members.forEach(m => memberMap[m.id] = m);
+
+  container.innerHTML = `
+    <div class="page home-page">
+      <div class="header">
+        <div class="header-top">
+          <h1>总资产</h1>
+          ${currencySwitcherHTML('displayCurrency', 'home-total')}
+        </div>
+        <div class="total-amount" id="total-amount-display">${RateService.formatCurrency(totalAssetsDisplay.amount || 0, State.displayCurrency)}</div>
+        ${State.displayCurrency !== State.baseCurrency ? `<div class="sub-amount">≈ ${RateService.formatCurrency(totalAssetsBase, State.baseCurrency)}</div>` : ''}
+      </div>
+
+      <div class="member-tabs" id="member-tabs">
+        ${members.map(m => `
+          <button class="member-tab ${State.selectedMemberId === m.id ? 'active' : ''}" data-member="${m.id}">
+            ${m.is_family ? '🏠' : ''} ${m.name}
+          </button>
+        `).join('')}
+      </div>
+
+      <div class="section">
+        <div class="section-title">账户</div>
+        <div class="account-cards" id="account-cards">
+          ${accounts.length === 0 ? '<div class="empty-hint">暂无账户，去设置中添加</div>' :
+            accounts.map(a => `
+              <div class="account-card">
+                <div class="account-icon">${accountIcon(a.type)}</div>
+                <div class="account-name">${a.name}</div>
+                <div class="account-balance">${RateService.formatCurrency(a.balance, a.currency)}</div>
+                <div class="account-currency">${a.currency}</div>
+              </div>
+            `).join('')
+          }
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span>本月支出</span>
+          <span class="section-amount">${RateService.formatCurrency(monthExpenseDisplay.amount || 0, State.displayCurrency)}</span>
+        </div>
+        ${monthExpense.length === 0 ? '<div class="empty-hint">本月暂无支出记录</div>' : `
+          <div class="category-breakdown">
+            ${getCategoryBreakdown(monthExpense, catMap).slice(0, 5).map(item => `
+              <div class="cat-bar">
+                <span class="cat-dot" style="background:${item.color}"></span>
+                <span class="cat-name">${item.icon ? '' : ''}${item.name}</span>
+                <div class="cat-bar-bg"><div class="cat-bar-fill" style="width:${item.percent}%; background:${item.color}"></div></div>
+                <span class="cat-amount">${RateService.formatCurrency(item.amount, State.baseCurrency)}</span>
+              </div>
+            `).join('')}
+          </div>
+        `}
+      </div>
+
+      <div class="section">
+        <div class="section-title">最近交易</div>
+        ${recentTx.length === 0 ? '<div class="empty-hint">暂无交易记录，点击 + 开始记账</div>' :
+          recentTx.map(t => transactionItemHTML(t, catMap, memberMap)).join('')
+        }
+      </div>
+
+      <div style="height:100px"></div>
+      ${tabBarHTML('home')}
+    </div>
+  `;
+
+  bindCurrencySwitcher();
+  bindMemberTabs();
+  bindTransactionItems();
+}
+
+function getCategoryBreakdown(txns, catMap) {
+  const map = {};
+  for (const t of txns) {
+    const cat = catMap[t.category_id] || { name: '其他', color: '#6B7280' };
+    if (!map[t.category_id]) map[t.category_id] = { ...cat, amount: 0 };
+    map[t.category_id].amount += t.base_amount || 0;
+  }
+  const arr = Object.values(map).sort((a, b) => b.amount - a.amount);
+  const total = arr.reduce((s, i) => s + i.amount, 0);
+  arr.forEach(i => i.percent = total > 0 ? Math.round(i.amount / total * 100) : 0);
+  return arr;
+}
+
+function transactionItemHTML(t, catMap, memberMap) {
+  const cat = catMap[t.category_id] || { name: '转账', icon: 'arrow.left.arrow.right', color: '#6B7280' };
+  const member = memberMap[t.member_id] || { name: '', color: '#ccc' };
+  const sign = t.type === 'income' ? '+' : (t.type === 'transfer' ? '' : '-');
+  const amountColor = t.type === 'income' ? '#22C55E' : '#1a1a1a';
+  return `
+    <div class="tx-item" data-tx-id="${t.id}">
+      <div class="tx-icon" style="background:${cat.color}20; color:${cat.color}">
+        ${sfSymbol(cat.icon)}
+      </div>
+      <div class="tx-info">
+        <div class="tx-title">${cat.name}</div>
+        <div class="tx-meta">
+          ${member && !member.is_family ? `<span class="tx-member-dot" style="background:${member.color}"></span>${member.name}` : '🏠 全家'}
+          · ${formatDate(t.date)}
+          ${t.note ? ` · ${t.note}` : ''}
+        </div>
+      </div>
+      <div class="tx-amount" style="color:${amountColor}">
+        ${sign}${RateService.formatCurrency(t.amount, t.currency)}
+      </div>
+    </div>
+  `;
+}
+
+function accountIcon(type) {
+  const icons = { cash: '💵', bank: '🏦', card: '💳', wallet: '👛', savings: ' Piggy Bank' };
+  return icons[type] || '💰';
+}
+
+function sfSymbol(name) {
+  // SF Symbol 映射到 emoji 简化处理
+  const map = {
+    'fork.knife': '🍔', 'car.fill': '🚗', 'bag.fill': '🛍️', 'house.fill': '🏠',
+    'gamecontroller.fill': '🎮', 'cross.case.fill': '💊', 'book.fill': '📚',
+    'airplane': '✈️', 'ellipsis.circle': '📋', 'banknote': '💵', 'briefcase.fill': '💼',
+    'chart.line.uptrend.xyaxis': '📈', 'gift.fill': '🎁', 'arrow.left.arrow.right': '🔄'
+  };
+  return map[name] || '💰';
+}
+
+// ===== 币种切换器组件 =====
+function currencySwitcherHTML(stateKey, id) {
+  return `
+    <div class="currency-switcher" data-state="${stateKey}" data-id="${id}">
+      <span class="cs-symbol">${RateService.getCurrencyInfo(State[stateKey]).symbol}</span>
+      <span class="cs-code">${State[stateKey]}</span>
+      <span class="cs-arrow">▼</span>
+    </div>
+  `;
+}
+
+function bindCurrencySwitcher() {
+  document.querySelectorAll('.currency-switcher').forEach(el => {
+    el.onclick = () => showCurrencyPicker(el.dataset.state, el.dataset.id);
+  });
+}
+
+function showCurrencyPicker(stateKey, id) {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="picker-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">选择币种</div>
+      <div class="currency-list">
+        ${RateService.CURRENCIES.map(c => `
+          <button class="currency-option ${State[stateKey] === c.code ? 'selected' : ''}" data-currency="${c.code}">
+            <span class="cur-flag">${c.flag}</span>
+            <span class="cur-info">
+              <span class="cur-code">${c.code}</span>
+              <span class="cur-name">${c.name}</span>
+            </span>
+            <span class="cur-symbol">${c.symbol}</span>
+            ${State[stateKey] === c.code ? '<span class="cur-check">✓</span>' : ''}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => {
+    if (e.target === overlay) { overlay.remove(); return; }
+    const opt = e.target.closest('.currency-option');
+    if (opt) {
+      State[stateKey] = opt.dataset.currency;
+      overlay.remove();
+      render();
+    }
+  };
+}
+
+// ===== 成员 Tab 切换 =====
+function bindMemberTabs() {
+  document.querySelectorAll('.member-tab').forEach(el => {
+    el.onclick = () => {
+      State.selectedMemberId = el.dataset.member;
+      render();
+    };
+  });
+}
+
+// ===== 交易列表点击 =====
+function bindTransactionItems() {
+  document.querySelectorAll('.tx-item').forEach(el => {
+    el.onclick = () => {
+      const id = el.dataset.txId;
+      DB.getTransactions().then(all => {
+        const tx = all.find(t => t.id === id);
+        if (tx) openEdit(tx);
+      });
+    };
+  });
+}
+
+// ===== Tab Bar =====
+function tabBarHTML(active) {
+  return `
+    <div class="tab-bar">
+      <button class="tab ${active === 'home' ? 'active' : ''}" onclick="navigate('home')">
+        <span class="tab-icon">🏠</span><span class="tab-label">总览</span>
+      </button>
+      <button class="tab tab-add" onclick="navigate('add')">
+        <span class="tab-add-btn">+</span>
+      </button>
+      <button class="tab ${active === 'reports' ? 'active' : ''}" onclick="navigate('reports')">
+        <span class="tab-icon">📊</span><span class="tab-label">报表</span>
+      </button>
+      <button class="tab ${active === 'settings' ? 'active' : ''}" onclick="navigate('settings')">
+        <span class="tab-icon">⚙️</span><span class="tab-label">设置</span>
+      </button>
+    </div>
+  `;
+}
+
+// ===== 记账页面 =====
+async function renderAddTransaction(container) {
+  const categories = await DB.getCategories();
+  const accounts = await DB.getAccounts();
+  const members = await DB.getMembers();
+  const editing = State.editingTransaction;
+
+  const txType = editing?.type || 'expense';
+  const amount = editing?.amount || '';
+  const currency = editing?.currency || State.lastUsedCurrency;
+  const categoryId = editing?.category_id || '';
+  const memberId = editing?.member_id || State.lastUsedMemberId;
+  const accountId = editing?.account_id || accounts[0]?.id || '';
+  const note = editing?.note || '';
+  const date = editing?.date?.split('T')[0] || todayISO();
+
+  const typeCategories = categories.filter(c => c.type === (txType === 'transfer' ? 'expense' : txType));
+
+  // 计算折算
+  const baseCur = State.baseCurrency;
+  const { amount: converted, rate } = await RateService.convertAmount(
+    parseFloat(amount) || 0, currency, baseCur, date
+  );
+
+  container.innerHTML = `
+    <div class="page add-page">
+      <div class="nav-bar">
+        <button class="nav-btn" onclick="navigate('home')">✕</button>
+        <h2>${editing ? '编辑' : '记一笔'}</h2>
+        <button class="nav-btn nav-save" onclick="saveTx()">保存</button>
+      </div>
+
+      <div class="type-segment">
+        <button class="seg-btn ${txType === 'expense' ? 'active expense' : ''}" data-type="expense">支出</button>
+        <button class="seg-btn ${txType === 'income' ? 'active income' : ''}" data-type="income">收入</button>
+        <button class="seg-btn ${txType === 'transfer' ? 'active transfer' : ''}" data-type="transfer">转账</button>
+      </div>
+
+      <div class="amount-input-area">
+        <input type="number" id="tx-amount" value="${amount}" placeholder="0.00" step="0.01" inputmode="decimal" />
+        <div class="amount-currency" onclick="showTxCurrencyPicker('${currency}')">
+          <span class="cs-symbol">${RateService.getCurrencyInfo(currency).symbol}</span>
+          <span class="cs-code">${currency}</span>
+          <span class="cs-arrow">▼</span>
+        </div>
+      </div>
+      ${currency !== baseCur ? `
+        <div class="rate-display" id="rate-display" onclick="editRate()" style="${amount ? '' : 'visibility:hidden'}">
+          ${amount ? `≈ ${RateService.formatCurrency(converted || 0, baseCur)} (汇率: 1 ${currency} = ${(rate || 0).toFixed(4)} ${baseCur}, ${date})` : ''}
+        </div>
+      ` : '<div class="rate-display" id="rate-display" style="display:none"></div>'}
+
+      <div class="form-section">
+        <div class="form-label">归属成员</div>
+        <div class="member-picker" id="member-picker">
+          ${members.map(m => `
+            <button class="member-pick-btn ${memberId === m.id ? 'active' : ''}" data-member="${m.id}" style="${memberId === m.id ? `border-color:${m.color};background:${m.color}15` : ''}">
+              ${m.is_family ? '🏠' : `<span class="dot" style="background:${m.color}"></span>`} ${m.name}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      ${txType !== 'transfer' ? `
+        <div class="form-section">
+          <div class="form-label">分类</div>
+          <div class="category-grid" id="category-grid">
+            ${typeCategories.map(c => `
+              <button class="cat-btn ${categoryId === c.id ? 'active' : ''}" data-cat="${c.id}" style="${categoryId === c.id ? `border-color:${c.color};background:${c.color}15` : ''}">
+                <span class="cat-btn-icon" style="background:${c.color}20">${sfSymbol(c.icon)}</span>
+                <span class="cat-btn-name">${c.name}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      ` : `
+        <div class="form-section">
+          <div class="form-label">转入账户</div>
+          <select id="to-account-select" class="form-select">
+            ${accounts.filter(a => a.id !== accountId).map(a => `<option value="${a.id}" ${editing?.to_account_id === a.id ? 'selected' : ''}>${a.name} (${a.currency})</option>`).join('')}
+          </select>
+        </div>
+      `}
+
+      <div class="form-section">
+        <div class="form-label">账户</div>
+        <select id="account-select" class="form-select">
+          ${accounts.map(a => `<option value="${a.id}" ${accountId === a.id ? 'selected' : ''}>${a.name} (${a.currency})</option>`).join('')}
+        </select>
+      </div>
+
+      <div class="form-section">
+        <div class="form-label">日期</div>
+        <input type="date" id="tx-date" class="form-select" value="${date}" />
+      </div>
+
+      <div class="form-section">
+        <div class="form-label">备注</div>
+        <input type="text" id="tx-note" class="form-input" value="${note}" placeholder="添加备注（可选）" />
+      </div>
+
+      <div style="height:100px"></div>
+      ${editing ? `<button class="delete-btn" onclick="deleteTx('${editing.id}')">删除此记录</button>` : ''}
+    </div>
+  `;
+
+  // 绑定类型切换
+  document.querySelectorAll('.seg-btn').forEach(btn => {
+    btn.onclick = () => {
+      const newType = btn.dataset.type;
+      if (editing) { editing.type = newType; }
+      else { State.editingTransaction = { type: newType }; }
+      render();
+    };
+  });
+
+  // 金额输入实时更新折算
+  document.getElementById('tx-amount').oninput = () => {
+    const val = document.getElementById('tx-amount').value;
+    const el = document.getElementById('rate-display');
+    if (!el) return;
+    if (val && currency !== baseCur) {
+      RateService.convertAmount(parseFloat(val) || 0, currency, baseCur, date).then(({ amount: conv, rate: r }) => {
+        el.style.visibility = 'visible';
+        el.innerHTML = `≈ ${RateService.formatCurrency(conv || 0, baseCur)} (汇率: 1 ${currency} = ${(r || 0).toFixed(4)} ${baseCur}, ${date})`;
+      });
+    } else {
+      el.style.visibility = 'hidden';
+    }
+  };
+
+  // 成员选择
+  document.querySelectorAll('.member-pick-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('.member-pick-btn').forEach(b => {
+        b.classList.remove('active');
+        b.style.borderColor = ''; b.style.background = '';
+      });
+      btn.classList.add('active');
+      const m = members.find(m => m.id === btn.dataset.member);
+      if (m) { btn.style.borderColor = m.color; btn.style.background = m.color + '15'; }
+      State.lastUsedMemberId = btn.dataset.member;
+      DB.setSetting('lastMemberId', btn.dataset.member);
+    };
+  });
+
+  // 分类选择
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('.cat-btn').forEach(b => {
+        b.classList.remove('active'); b.style.borderColor = ''; b.style.background = '';
+      });
+      btn.classList.add('active');
+      const c = typeCategories.find(c => c.id === btn.dataset.cat);
+      if (c) { btn.style.borderColor = c.color; btn.style.background = c.color + '15'; }
+    };
+  });
+}
+
+let txCurrencyOverride = null;
+
+function showTxCurrencyPicker(current) {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="picker-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">选择币种</div>
+      <div class="currency-list">
+        ${RateService.CURRENCIES.map(c => `
+          <button class="currency-option ${current === c.code ? 'selected' : ''}" data-currency="${c.code}">
+            <span class="cur-flag">${c.flag}</span>
+            <span class="cur-info"><span class="cur-code">${c.code}</span><span class="cur-name">${c.name}</span></span>
+            <span class="cur-symbol">${c.symbol}</span>
+            ${current === c.code ? '<span class="cur-check">✓</span>' : ''}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => {
+    if (e.target === overlay) { overlay.remove(); return; }
+    const opt = e.target.closest('.currency-option');
+    if (opt) {
+      txCurrencyOverride = opt.dataset.currency;
+      State.lastUsedCurrency = opt.dataset.currency;
+      overlay.remove();
+      // 重新渲染记账页保持已输入数据
+      saveFormDataAndRerender();
+    }
+  };
+}
+
+function saveFormDataAndRerender() {
+  const editing = State.editingTransaction || {};
+  editing.amount = parseFloat(document.getElementById('tx-amount')?.value) || editing.amount || 0;
+  editing.currency = txCurrencyOverride || editing.currency || State.lastUsedCurrency;
+  editing.note = document.getElementById('tx-note')?.value || editing.note || '';
+  editing.date = document.getElementById('tx-date')?.value || editing.date || todayISO();
+  const activeCat = document.querySelector('.cat-btn.active');
+  if (activeCat) editing.category_id = activeCat.dataset.cat;
+  const activeMember = document.querySelector('.member-pick-btn.active');
+  if (activeMember) editing.member_id = activeMember.dataset.member;
+  const acctSelect = document.getElementById('account-select');
+  if (acctSelect) editing.account_id = acctSelect.value;
+  const toAcctSelect = document.getElementById('to-account-select');
+  if (toAcctSelect) editing.to_account_id = toAcctSelect.value;
+  State.editingTransaction = editing;
+  txCurrencyOverride = null;
+  render();
+}
+
+async function saveTx() {
+  const editing = State.editingTransaction || {};
+  const type = document.querySelector('.seg-btn.active')?.dataset.type || 'expense';
+
+  const amount = parseFloat(document.getElementById('tx-amount').value);
+  if (!amount || amount <= 0) { showToast('请输入金额'); return; }
+
+  const currency = txCurrencyOverride || editing.currency || State.lastUsedCurrency;
+  const date = document.getElementById('tx-date').value;
+  const note = document.getElementById('tx-note').value;
+  const account_id = document.getElementById('account-select').value;
+  const memberEl = document.querySelector('.member-pick-btn.active');
+  const member_id = memberEl?.dataset.member || State.lastUsedMemberId;
+  const catEl = document.querySelector('.cat-btn.active');
+  const category_id = catEl?.dataset.cat || editing.category_id;
+
+  if (type !== 'transfer' && !category_id) { showToast('请选择分类'); return; }
+
+  // 获取汇率快照
+  const { rate } = await RateService.convertAmount(amount, currency, State.baseCurrency, date);
+  const base_amount = rate ? amount * rate : amount;
+
+  const tx = {
+    id: editing.id || uuid(),
+    type,
+    account_id,
+    to_account_id: type === 'transfer' ? document.getElementById('to-account-select')?.value : null,
+    category_id: type === 'transfer' ? null : category_id,
+    member_id,
+    amount,
+    currency,
+    exchange_rate: rate || 1,
+    rate_date: date,
+    base_amount,
+    note,
+    date: date + 'T' + new Date().toTimeString().split(' ')[0],
+    created_at: editing.created_at || nowISO()
+  };
+
+  if (type === 'transfer') {
+    const toAcct = await DB.getAccounts().then(a => a.find(x => x.id === tx.to_account_id));
+    if (toAcct) {
+      const { rate: toRate } = await RateService.convertAmount(amount, currency, toAcct.currency, date);
+      tx.to_amount = toRate ? amount * toRate : amount;
+    }
+  }
+
+  await DB.saveTransaction(tx);
+  State.editingTransaction = null;
+  txCurrencyOverride = null;
+  showToast('保存成功');
+  await navigate('home');
+}
+
+async function deleteTx(id) {
+  if (!confirm('确认删除？')) return;
+  await DB.deleteTransaction(id);
+  State.editingTransaction = null;
+  showToast('已删除');
+  await navigate('home');
+}
+
+function editRate() {
+  const newRate = prompt('手动修改汇率（当前币种 → 本位币）:');
+  if (newRate && !isNaN(parseFloat(newRate))) {
+    const rate = parseFloat(newRate);
+    const today = todayISO();
+    const currency = txCurrencyOverride || State.editingTransaction?.currency || State.lastUsedCurrency;
+    DB.saveCachedRate(currency, State.baseCurrency, rate, today);
+    saveFormDataAndRerender();
+  }
+}
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.classList.add('show'), 10);
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, 2000);
+}
+
+// ===== 报表页面 =====
+async function renderReports(container) {
+  const members = await DB.getMembers();
+  const f = State.reportsFilter;
+  const today = new Date();
+  let startDate, endDate;
+
+  if (f.period === 'week') {
+    const day = today.getDay() || 7;
+    startDate = new Date(today); startDate.setDate(today.getDate() - day + 1);
+    endDate = today;
+  } else if (f.period === 'month') {
+    startDate = new Date(today.getFullYear(), today.getMonth(), 1);
+    endDate = today;
+  } else {
+    startDate = new Date(today.getFullYear(), 0, 1);
+    endDate = today;
+  }
+
+  let txns = await DB.getTransactions({ startDate: startDate.toISOString(), endDate: endDate.toISOString() });
+  if (f.memberId !== 'family') txns = txns.filter(t => t.member_id === f.memberId);
+
+  const expenses = txns.filter(t => t.type === 'expense');
+  const incomes = txns.filter(t => t.type === 'income');
+
+  const totalExpense = expenses.reduce((s, t) => s + (t.base_amount || 0), 0);
+  const totalIncome = incomes.reduce((s, t) => s + (t.base_amount || 0), 0);
+  const balance = totalIncome - totalExpense;
+
+  // 折算到报表币种
+  const reportCur = f.currency || State.baseCurrency;
+  const expConverted = await RateService.convertAmount(totalExpense, State.baseCurrency, reportCur);
+  const incConverted = await RateService.convertAmount(totalIncome, State.baseCurrency, reportCur);
+  const balConverted = await RateService.convertAmount(balance, State.baseCurrency, reportCur);
+
+  const categories = await DB.getAllCategories();
+  const catMap = {}; categories.forEach(c => catMap[c.id] = c);
+  const catBreakdown = getCategoryBreakdown(expenses, catMap);
+
+  // 成员支出
+  const memberBreakdown = [];
+  for (const m of members) {
+    const mTx = txns.filter(t => t.type === 'expense' && t.member_id === m.id);
+    const mTotal = mTx.reduce((s, t) => s + (t.base_amount || 0), 0);
+    if (mTotal > 0) memberBreakdown.push({ ...m, amount: mTotal });
+  }
+  memberBreakdown.sort((a, b) => b.amount - a.amount);
+
+  // 币种分布
+  const currencyMap = {};
+  for (const t of expenses) {
+    if (!currencyMap[t.currency]) currencyMap[t.currency] = 0;
+    currencyMap[t.currency] += t.base_amount || 0;
+  }
+  const curDist = Object.entries(currencyMap).map(([code, amount]) => ({
+    code, amount, percent: totalExpense > 0 ? Math.round(amount / totalExpense * 100) : 0
+  })).sort((a, b) => b.amount - a.amount);
+
+  const totalAssetsBase = (await DB.getAccounts()).reduce(async (sumPromise, a) => {
+    const sum = await sumPromise;
+    const { amount } = await RateService.convertAmount(a.balance, a.currency, State.baseCurrency);
+    return sum + (amount || 0);
+  }, Promise.resolve(0));
+  const totalAssets = await totalAssetsBase;
+
+  container.innerHTML = `
+    <div class="page reports-page">
+      <div class="nav-bar">
+        <h2>报表</h2>
+        <div onclick="showReportsCurrencyPicker()">${currencySwitcherHTML('reportsCurrencyTemp', 'reports').replace('<div class="currency-switcher"', '<div class="currency-switcher" onclick="event.stopPropagation()"')}</div>
+      </div>
+
+      <div class="period-segment">
+        <button class="seg-btn ${f.period === 'week' ? 'active' : ''}" onclick="setReportPeriod('week')">本周</button>
+        <button class="seg-btn ${f.period === 'month' ? 'active' : ''}" onclick="setReportPeriod('month')">本月</button>
+        <button class="seg-btn ${f.period === 'year' ? 'active' : ''}" onclick="setReportPeriod('year')">今年</button>
+      </div>
+
+      <div class="member-tabs">
+        ${members.map(m => `
+          <button class="member-tab ${f.memberId === m.id ? 'active' : ''}" onclick="setReportMember('${m.id}')">
+            ${m.is_family ? '🏠' : ''} ${m.name}
+          </button>
+        `).join('')}
+      </div>
+
+      <div class="summary-cards">
+        <div class="summary-card expense">
+          <div class="sc-label">支出</div>
+          <div class="sc-amount">${RateService.formatCurrency(expConverted.amount || 0, reportCur)}</div>
+        </div>
+        <div class="summary-card income">
+          <div class="sc-label">收入</div>
+          <div class="sc-amount">${RateService.formatCurrency(incConverted.amount || 0, reportCur)}</div>
+        </div>
+        <div class="summary-card balance">
+          <div class="sc-label">结余</div>
+          <div class="sc-amount">${RateService.formatCurrency(balConverted.amount || 0, reportCur)}</div>
+        </div>
+      </div>
+
+      ${catBreakdown.length > 0 ? `
+        <div class="section">
+          <div class="section-title">支出分类</div>
+          <div class="chart-container">
+            <canvas id="cat-chart" width="300" height="200"></canvas>
+          </div>
+          <div class="legend">
+            ${catBreakdown.slice(0, 6).map(c => `
+              <div class="legend-item">
+                <span class="legend-dot" style="background:${c.color}"></span>
+                <span class="legend-name">${c.name}</span>
+                <span class="legend-amount">${RateService.formatCurrency(c.amount, reportCur)}</span>
+                <span class="legend-percent">${c.percent}%</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      ${memberBreakdown.length > 0 && f.memberId === 'family' ? `
+        <div class="section">
+          <div class="section-title">成员支出对比</div>
+          <div class="member-bars">
+            ${memberBreakdown.map(m => {
+              const maxAmt = memberBreakdown[0].amount;
+              const pct = maxAmt > 0 ? Math.round(m.amount / maxAmt * 100) : 0;
+              const converted = RateService.convertAmount(m.amount, State.baseCurrency, reportCur);
+              return `
+                <div class="member-bar-item">
+                  <div class="mb-info">
+                    <span class="dot" style="background:${m.color}"></span>
+                    <span>${m.is_family ? '🏠 ' : ''}${m.name}</span>
+                  </div>
+                  <div class="mb-bar-bg">
+                    <div class="mb-bar-fill" style="width:${pct}%; background:${m.color}"></div>
+                  </div>
+                  <span class="mb-amount">${RateService.formatCurrency(m.amount, reportCur)}</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      ${curDist.length > 0 ? `
+        <div class="section">
+          <div class="section-title">币种分布</div>
+          <div class="currency-dist">
+            ${curDist.map(c => `
+              <div class="cd-item">
+                <span class="cd-flag">${RateService.getCurrencyInfo(c.code).flag}</span>
+                <span class="cd-code">${c.code}</span>
+                <div class="cd-bar-bg"><div class="cd-bar-fill" style="width:${c.percent}%"></div></div>
+                <span class="cd-percent">${c.percent}%</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <div style="height:100px"></div>
+      ${tabBarHTML('reports')}
+    </div>
+  `;
+
+  // 渲染分类饼图
+  if (catBreakdown.length > 0 && typeof Chart !== 'undefined') {
+    const ctx = document.getElementById('cat-chart');
+    if (ctx) {
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: catBreakdown.map(c => c.name),
+          datasets: [{
+            data: catBreakdown.map(c => c.amount),
+            backgroundColor: catBreakdown.map(c => c.color),
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => `${ctx.label}: ${RateService.formatCurrency(ctx.parsed, reportCur)}`
+              }
+            }
+          },
+          cutout: '60%'
+        }
+      });
+    }
+  }
+}
+
+State.reportsCurrencyTemp = State.baseCurrency;
+
+function showReportsCurrencyPicker() {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="picker-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">报表币种</div>
+      <div class="currency-list">
+        ${RateService.CURRENCIES.map(c => `
+          <button class="currency-option ${(State.reportsFilter.currency || State.baseCurrency) === c.code ? 'selected' : ''}" data-currency="${c.code}">
+            <span class="cur-flag">${c.flag}</span>
+            <span class="cur-info"><span class="cur-code">${c.code}</span><span class="cur-name">${c.name}</span></span>
+            <span class="cur-symbol">${c.symbol}</span>
+            ${(State.reportsFilter.currency || State.baseCurrency) === c.code ? '<span class="cur-check">✓</span>' : ''}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => {
+    if (e.target === overlay) { overlay.remove(); return; }
+    const opt = e.target.closest('.currency-option');
+    if (opt) {
+      State.reportsFilter.currency = opt.dataset.currency;
+      overlay.remove();
+      render();
+    }
+  };
+}
+
+function setReportPeriod(p) { State.reportsFilter.period = p; render(); }
+function setReportMember(id) { State.reportsFilter.memberId = id; render(); }
+
+// ===== 设置页面 =====
+async function renderSettings(container) {
+  const members = await DB.getAllMembers();
+  const categories = await DB.getAllCategories();
+  const accounts = await DB.getAllAccounts();
+
+  container.innerHTML = `
+    <div class="page settings-page">
+      <div class="nav-bar"><h2>设置</h2></div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">本位币</div>
+        <div class="setting-row" onclick="showBaseCurrencyPicker()">
+          <span>${RateService.getCurrencyInfo(State.baseCurrency).flag} ${State.baseCurrency} — ${RateService.getCurrencyInfo(State.baseCurrency).name}</span>
+          <span class="setting-arrow">›</span>
+        </div>
+        <div class="setting-row" onclick="updateRates()">
+          <span>🔄 更新汇率</span>
+          <span class="setting-arrow">›</span>
+        </div>
+      </div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">家庭成员管理</div>
+        ${members.map(m => `
+          <div class="setting-row member-row" data-id="${m.id}">
+            <span>
+              <span class="dot" style="background:${m.color}"></span>
+              ${m.is_family ? '🏠' : ''} ${m.name}
+              ${m.is_archived ? '<span class="archived-tag">已归档</span>' : ''}
+            </span>
+            ${m.is_family ? '<span class="setting-hint">不可删除</span>' : `
+              <span class="row-actions">
+                <button onclick="event.stopPropagation();editMember('${m.id}')">编辑</button>
+                <button onclick="event.stopPropagation();archiveMember('${m.id}')">归档</button>
+                <button onclick="event.stopPropagation();removeMember('${m.id}')" class="danger">删除</button>
+              </span>
+            `}
+          </div>
+        `).join('')}
+        <button class="add-btn" onclick="addMember()">+ 添加成员</button>
+      </div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">分类管理 — 支出</div>
+        ${categories.filter(c => c.type === 'expense').map(c => `
+          <div class="setting-row cat-row" data-id="${c.id}">
+            <span><span class="cat-color-dot" style="background:${c.color}"></span> ${sfSymbol(c.icon)} ${c.name}</span>
+            <span class="row-actions">
+              <button onclick="event.stopPropagation();editCategory('${c.id}')">编辑</button>
+              <button onclick="event.stopPropagation();archiveCategory('${c.id}')">归档</button>
+              <button onclick="event.stopPropagation();removeCategory('${c.id}')" class="danger">删除</button>
+            </span>
+          </div>
+        `).join('')}
+        <button class="add-btn" onclick="addCategory('expense')">+ 添加支出分类</button>
+      </div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">分类管理 — 收入</div>
+        ${categories.filter(c => c.type === 'income').map(c => `
+          <div class="setting-row cat-row" data-id="${c.id}">
+            <span><span class="cat-color-dot" style="background:${c.color}"></span> ${sfSymbol(c.icon)} ${c.name}</span>
+            <span class="row-actions">
+              <button onclick="event.stopPropagation();editCategory('${c.id}')">编辑</button>
+              <button onclick="event.stopPropagation();archiveCategory('${c.id}')">归档</button>
+              <button onclick="event.stopPropagation();removeCategory('${c.id}')" class="danger">删除</button>
+            </span>
+          </div>
+        `).join('')}
+        <button class="add-btn" onclick="addCategory('income')">+ 添加收入分类</button>
+      </div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">账户管理</div>
+        ${accounts.map(a => `
+          <div class="setting-row" data-id="${a.id}">
+            <span>${accountIcon(a.type)} ${a.name} <span class="account-tag">${a.currency}</span></span>
+            <span class="row-actions">
+              <button onclick="event.stopPropagation();editAccount('${a.id}')">编辑</button>
+              <button onclick="event.stopPropagation();removeAccount('${a.id}')" class="danger">归档</button>
+            </span>
+          </div>
+        `).join('')}
+        <button class="add-btn" onclick="addAccount()">+ 添加账户</button>
+      </div>
+
+      <div class="setting-group">
+        <div class="setting-group-title">数据</div>
+        <div class="setting-row" onclick="exportData()">
+          <span>📤 导出数据 (CSV)</span>
+          <span class="setting-arrow">›</span>
+        </div>
+      </div>
+
+      <div style="height:100px"></div>
+      ${tabBarHTML('settings')}
+    </div>
+  `;
+}
+
+function showBaseCurrencyPicker() {
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="picker-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">选择本位币</div>
+      <div class="currency-list">
+        ${RateService.CURRENCIES.map(c => `
+          <button class="currency-option ${State.baseCurrency === c.code ? 'selected' : ''}" data-currency="${c.code}">
+            <span class="cur-flag">${c.flag}</span>
+            <span class="cur-info"><span class="cur-code">${c.code}</span><span class="cur-name">${c.name}</span></span>
+            <span class="cur-symbol">${c.symbol}</span>
+            ${State.baseCurrency === c.code ? '<span class="cur-check">✓</span>' : ''}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => {
+    if (e.target === overlay) { overlay.remove(); return; }
+    const opt = e.target.closest('.currency-option');
+    if (opt) {
+      State.baseCurrency = opt.dataset.currency;
+      DB.setSetting('baseCurrency', opt.dataset.currency);
+      RateService.ensureRatesFresh(opt.dataset.currency);
+      overlay.remove();
+      render();
+    }
+  };
+}
+
+async function updateRates() {
+  showToast('正在更新汇率...');
+  await RateService.fetchAndCacheRates(State.baseCurrency);
+  showToast('汇率已更新');
+}
+
+// ===== 成员管理 =====
+const MEMBER_COLORS = ['#EF4444','#3B82F6','#10B981','#F59E0B','#8B5CF6','#EC4899','#06B6D4','#F97316'];
+const MEMBER_AVATARS = ['person.fill','person.2.fill','figure.child','figure.wave','star.fill','heart.fill'];
+
+async function addMember() {
+  showMemberEditor(null);
+}
+
+async function editMember(id) {
+  const m = await DB.getAllMembers().then(ms => ms.find(x => x.id === id));
+  if (m) showMemberEditor(m);
+}
+
+function showMemberEditor(member) {
+  const isEdit = !!member;
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="editor-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">${isEdit ? '编辑' : '添加'}成员</div>
+      <div class="form-section">
+        <div class="form-label">名称</div>
+        <input type="text" id="member-name" class="form-input" value="${member?.name || ''}" placeholder="如：爸爸" />
+      </div>
+      <div class="form-section">
+        <div class="form-label">颜色</div>
+        <div class="color-picker">
+          ${MEMBER_COLORS.map(c => `
+            <button class="color-option ${member?.color === c ? 'selected' : ''}" data-color="${c}" style="background:${c}"></button>
+          `).join('')}
+        </div>
+      </div>
+      <button class="primary-btn" onclick="saveMemberEdit('${member?.id || ''}')">保存</button>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+
+  // 绑定颜色选择
+  overlay.querySelectorAll('.color-option').forEach(b => {
+    b.onclick = () => {
+      overlay.querySelectorAll('.color-option').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+    };
+  });
+}(id) {
+  const name = document.getElementById('member-name').value.trim();
+  if (!name) { showToast('请输入名称'); return; }
+  const colorEl = document.querySelector('.color-option.selected');
+  const color = colorEl?.dataset.color || MEMBER_COLORS[0];
+
+  if (id) {
+    const m = await DB.getAllMembers().then(ms => ms.find(x => x.id === id));
+    m.name = name; m.color = color;
+    await DB.saveMember(m);
+  } else {
+    const all = await DB.getAllMembers();
+    const order = Math.max(...all.map(m => m.sort_order || 0), 0) + 1;
+    await DB.saveMember({ name, color, sort_order: order, avatar: 'person.fill' });
+  }
+  document.querySelector('.overlay').remove();
+  showToast('已保存');
+  render();
+}
+
+async function archiveMember(id) {
+  await DB.archiveMember(id);
+  showToast('已归档');
+  render();
+}
+
+async function removeMember(id) {
+  if (!confirm('删除此成员？\n该成员的历史交易将迁移到"全家"。')) return;
+  await DB.deleteMember(id, 'family');
+  showToast('已删除');
+  render();
+}
+
+// ===== 分类管理 =====
+const CAT_COLORS = ['#EF4444','#3B82F6','#EC4899','#8B5CF6','#10B981','#F97316','#06B6D4','#14B8A6','#E11D48','#6B7280'];
+const CAT_ICONS = ['fork.knife','car.fill','bag.fill','house.fill','gamecontroller.fill','cross.case.fill','book.fill','airplane','gift.fill','ellipsis.circle','banknote','briefcase.fill','chart.line.uptrend.xyaxis','star.fill','heart.fill','fuelpump.fill','cup.and.saucer.fill','tshirt.fill','ticket.fill','wrench.fill'];
+
+async function addCategory(type) {
+  showCategoryEditor(null, type);
+}
+
+async function editCategory(id) {
+  const c = await DB.getAllCategories().then(cs => cs.find(x => x.id === id));
+  if (c) showCategoryEditor(c, c.type);
+}
+
+function showCategoryEditor(cat, type) {
+  const isEdit = !!cat;
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="editor-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">${isEdit ? '编辑' : '添加'}分类</div>
+      <div class="form-section">
+        <div class="form-label">名称</div>
+        <input type="text" id="cat-name" class="form-input" value="${cat?.name || ''}" placeholder="分类名称" />
+      </div>
+      <div class="form-section">
+        <div class="form-label">颜色</div>
+        <div class="color-picker">
+          ${CAT_COLORS.map(c => `
+            <button class="color-option ${cat?.color === c ? 'selected' : ''}" data-color="${c}" style="background:${c}"></button>
+          `).join('')}
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="form-label">图标</div>
+        <div class="icon-picker">
+          ${CAT_ICONS.map(ic => `
+            <button class="icon-option ${cat?.icon === ic ? 'selected' : ''}" data-icon="${ic}">${sfSymbol(ic)}</button>
+          `).join('')}
+        </div>
+      </div>
+      <button class="primary-btn" onclick="saveCategoryEdit('${cat?.id || ''}', '${type}')">保存</button>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+
+  // 绑定颜色和图标选择
+  overlay.querySelectorAll('.color-option').forEach(b => {
+    b.onclick = () => {
+      overlay.querySelectorAll('.color-option').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+    };
+  });
+  overlay.querySelectorAll('.icon-option').forEach(b => {
+    b.onclick = () => {
+      overlay.querySelectorAll('.icon-option').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+    };
+  });
+}
+
+async function saveCategoryEdit(id, type) {
+  const name = document.getElementById('cat-name').value.trim();
+  if (!name) { showToast('请输入名称'); return; }
+  const colorEl = document.querySelector('.color-option.selected');
+  const iconEl = document.querySelector('.icon-option.selected');
+  const color = colorEl?.dataset.color || CAT_COLORS[0];
+  const icon = iconEl?.dataset.icon || 'ellipsis.circle';
+
+  if (id) {
+    const c = await DB.getAllCategories().then(cs => cs.find(x => x.id === id));
+    c.name = name; c.color = color; c.icon = icon;
+    await DB.saveCategory(c);
+  } else {
+    const all = await DB.getCategories(type);
+    const order = all.length > 0 ? Math.max(...all.map(c => c.sort_order || 0)) + 1 : 0;
+    await DB.saveCategory({ name, color, icon, type, parent_id: null, sort_order: order });
+  }
+  document.querySelector('.overlay').remove();
+  showToast('已保存');
+  render();
+}
+
+async function archiveCategory(id) {
+  await DB.archiveCategory(id);
+  showToast('已归档');
+  render();
+}
+
+async function removeCategory(id) {
+  if (!confirm('删除此分类？\n请选择迁移方式：\n点击"确定"迁移到"其他"，点击"取消"不删除。')) return;
+  const others = await DB.getCategories().then(cs => cs.find(c => c.name === '其他'));
+  await DB.deleteCategory(id, others?.id || null);
+  showToast('已删除');
+  render();
+}
+
+// ===== 账户管理 =====
+async function addAccount() { showAccountEditor(null); }
+async function editAccount(id) {
+  const a = await DB.getAllAccounts().then(as => as.find(x => x.id === id));
+  if (a) showAccountEditor(a);
+}
+
+function showAccountEditor(acct) {
+  const isEdit = !!acct;
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.innerHTML = `
+    <div class="editor-sheet">
+      <div class="picker-handle"></div>
+      <div class="picker-title">${isEdit ? '编辑' : '添加'}账户</div>
+      <div class="form-section">
+        <div class="form-label">名称</div>
+        <input type="text" id="acct-name" class="form-input" value="${acct?.name || ''}" placeholder="如：英镑现金" />
+      </div>
+      <div class="form-section">
+        <div class="form-label">类型</div>
+        <select id="acct-type" class="form-select">
+          <option value="cash" ${acct?.type === 'cash' ? 'selected' : ''}>现金</option>
+          <option value="bank" ${acct?.type === 'bank' ? 'selected' : ''}>银行卡</option>
+          <option value="card" ${acct?.type === 'card' ? 'selected' : ''}>信用卡</option>
+          <option value="wallet" ${acct?.type === 'wallet' ? 'selected' : ''}>电子钱包</option>
+          <option value="savings" ${acct?.type === 'savings' ? 'selected' : ''}>储蓄/投资</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <div class="form-label">币种</div>
+        <select id="acct-currency" class="form-select">
+          ${RateService.CURRENCIES.map(c => `<option value="${c.code}" ${acct?.currency === c.code ? 'selected' : ''}>${c.flag} ${c.code} — ${c.name}</option>`).join('')}
+        </select>
+      </div>
+      ${isEdit ? `
+        <div class="form-section">
+          <div class="form-label">余额（直接修改）</div>
+          <input type="number" id="acct-balance" class="form-input" value="${acct?.balance || 0}" step="0.01" />
+        </div>
+      ` : ''}
+      <button class="primary-btn" onclick="saveAccountEdit('${acct?.id || ''}')">保存</button>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setTimeout(() => overlay.classList.add('show'), 10);
+  overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+}
+
+async function saveAccountEdit(id) {
+  const name = document.getElementById('acct-name').value.trim();
+  if (!name) { showToast('请输入名称'); return; }
+  const type = document.getElementById('acct-type').value;
+  const currency = document.getElementById('acct-currency').value;
+  const balanceEl = document.getElementById('acct-balance');
+
+  if (id) {
+    const a = await DB.getAllAccounts().then(as => as.find(x => x.id === id));
+    a.name = name; a.type = type; a.currency = currency;
+    if (balanceEl) a.balance = parseFloat(balanceEl.value) || 0;
+    await DB.saveAccount(a);
+  } else {
+    const all = await DB.getAllAccounts();
+    const order = all.length > 0 ? Math.max(...all.map(a => a.sort_order || 0)) + 1 : 0;
+    await DB.saveAccount({ name, type, currency, balance: 0, sort_order: order, member_id: null, note: '' });
+  }
+  document.querySelector('.overlay').remove();
+  showToast('已保存');
+  render();
+}
+
+async function removeAccount(id) {
+  if (!confirm('归档此账户？历史交易数据保留。')) return;
+  await DB.deleteAccount(id);
+  showToast('已归档');
+  render();
+}
+
+// ===== 导出 =====
+async function exportData() {
+  const txns = await DB.getTransactions();
+  const cats = await DB.getAllCategories();
+  const catMap = {}; cats.forEach(c => catMap[c.id] = c);
+  const members = await DB.getAllMembers();
+  const memberMap = {}; members.forEach(m => memberMap[m.id] = m);
+  const accounts = await DB.getAllAccounts();
+  const acctMap = {}; accounts.forEach(a => acctMap[a.id] = a);
+
+  const rows = [['日期','类型','分类','成员','账户','金额','币种','汇率','本位币金额','备注']];
+  for (const t of txns) {
+    rows.push([
+      t.date, t.type,
+      catMap[t.category_id]?.name || '转账',
+      memberMap[t.member_id]?.name || '',
+      acctMap[t.account_id]?.name || '',
+      t.amount, t.currency, t.exchange_rate, t.base_amount, t.note || ''
+    ]);
+  }
+  const csv = rows.map(r => r.map(c => `"${c}"`).join(',')).join('\n');
+  const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = `multicoin_${todayISO()}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('已导出');
+}
+
+// ===== 启动 =====
+window.addEventListener('DOMContentLoaded', initApp);
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+</body>
+</html>
